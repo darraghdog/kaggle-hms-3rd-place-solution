@@ -1,0 +1,5 @@
+timm==0.9.12
+transformers==4.37.1
+audiomentations==0.34.1
+#mne==1.6.1
+#fvcore==0.1.5.post20221221
