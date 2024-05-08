@@ -48,7 +48,7 @@ val_df = pd.concat([d[0] for d in dfs])
 
 
 X = []
-for cfg_name in weights_1d + weights_mel_ls:
+for cfg_name in weights_ls:
     dfs = [load_preds(cfg_name, F) for F in range(4)]
     pred_df1 = pd.concat([d[1] for d in dfs])
     logits = pred_df1.filter(like='_logits').values
