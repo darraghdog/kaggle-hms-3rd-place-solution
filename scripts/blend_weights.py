@@ -168,12 +168,13 @@ loss_fn(F.log_softmax(X_wtd2, dim=1), y)
 
 torch.corrcoef(X.transpose(2,1).reshape(-1, 6).permute(1,0))
 
+class_bias = params_ls.mean(0)[None,:]
 
 print('Final config weights')
 print(weights_dict)
 
 print('Final class bias')
-print(weights_dict)
+print(class_bias)
 
 
 
